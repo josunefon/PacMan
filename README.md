@@ -8,7 +8,7 @@
 
 ## 🎮 Play Now
 
-👉 **[Play in your browser](https://josunefon.github.io/pacman-jsf/)** — no install needed!
+👉 **[Play in your browser](https://josunefon.github.io/PacMan/)** — no install needed!
 
 ## ✨ Features
 
