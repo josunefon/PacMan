@@ -1,0 +1,15 @@
+{
+  "name": "pacman-jsf",
+  "version": "0.1.0",
+  "description": "Classic Pac-Man — a 2D pixel art arcade game in HTML5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -c-1 --cors -o",
+    "dev": "npx http-server . -p 8080 -c-1 --cors",
+    "test": "node --test tests/config.test.js tests/maze.test.js tests/pacman.test.js tests/ghost.test.js tests/game.test.js"
+  },
+  "keywords": ["pacman", "game", "html5", "canvas", "arcade"],
+  "author": "Jordi Sune",
+  "license": "MIT"
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>PAC-MAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-wrapper">
+    <div id="game-area">
+    <div id="game-container">
+      <canvas id="game-canvas"></canvas>
+      <div id="ui-overlay"></div>
+      <div id="scanlines"></div>
+
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen-overlay">
+        <div class="screen-content">
+          <h1 class="game-title">PAC-MAN</h1>
+
+          <div class="character-showcase">
+            <div class="showcase-heading">— CHARACTER / NICKNAME —</div>
+            <div class="ghost-row">
+              <span class="ghost-sprite blinky-bg"></span>
+              <span class="ghost-label blinky-color">-SHADOW &nbsp;"BLINKY"</span>
+            </div>
+            <div class="ghost-row">
+              <span class="ghost-sprite pinky-bg"></span>
+              <span class="ghost-label pinky-color">-SPEEDY &nbsp;"PINKY"</span>
+            </div>
+            <div class="ghost-row">
+              <span class="ghost-sprite inky-bg"></span>
+              <span class="ghost-label inky-color">-BASHFUL &nbsp;"INKY"</span>
+            </div>
+            <div class="ghost-row">
+              <span class="ghost-sprite clyde-bg"></span>
+              <span class="ghost-label clyde-color">-POKEY &nbsp;"CLYDE"</span>
+            </div>
+          </div>
+
+          <p class="pellet-info">
+            <span class="pellet-dot">·</span> 10 PTS
+            &nbsp;&nbsp;
+            <span class="pellet-power">●</span> 50 PTS
+          </p>
+
+          <p class="blink start-prompt">PRESS ENTER TO START</p>
+        </div>
+      </div>
+
+      <!-- Game Over Screen -->
+      <div id="game-over-screen" class="screen-overlay hidden">
+        <div class="screen-content">
+          <h1 class="game-over-title">GAME OVER</h1>
+          <p class="final-score">SCORE: <span id="final-score-value">0</span></p>
+          <p class="blink restart-prompt">PRESS ENTER TO PLAY AGAIN</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Score Panel -->
+      <div id="score-panel">
+        <div class="panel-section">
+          <div class="panel-label">1UP</div>
+          <div class="panel-value" id="panel-score">0</div>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="panel-section">
+          <div class="panel-label">HIGH SCORE</div>
+          <div class="panel-value panel-highlight" id="panel-high-score">0</div>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="panel-section">
+          <div class="panel-label">LEVEL</div>
+          <div class="panel-value" id="panel-level">1</div>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="panel-section">
+          <div class="panel-label">LIVES</div>
+          <div id="panel-lives" class="panel-lives"></div>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="panel-section">
+          <div class="panel-label">GHOST BONUS</div>
+          <div class="ghost-bonus-list">
+            <div class="ghost-bonus-item"><span class="bonus-ghost blinky-bg"></span> ×1 = <span class="bonus-pts">200</span></div>
+            <div class="ghost-bonus-item"><span class="bonus-ghost pinky-bg"></span> ×2 = <span class="bonus-pts">400</span></div>
+            <div class="ghost-bonus-item"><span class="bonus-ghost inky-bg"></span> ×3 = <span class="bonus-pts">800</span></div>
+            <div class="ghost-bonus-item"><span class="bonus-ghost clyde-bg"></span> ×4 = <span class="bonus-pts">1600</span></div>
+          </div>
+        </div>
+        <div class="panel-divider"></div>
+        <div class="panel-section">
+          <div class="panel-label">DOTS LEFT</div>
+          <div class="panel-value" id="panel-dots">0</div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="game-footer">
+      © 2026 — A nostalgic tribute to the classic arcade game
+    </footer>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

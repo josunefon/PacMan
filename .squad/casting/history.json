@@ -1,0 +1,22 @@
+{
+  "universe_usage_history": [
+    {
+      "universe": "The Goonies",
+      "first_used": "2026-03-12T12:55:06Z",
+      "repo": "pacman-jsf"
+    }
+  ],
+  "assignment_cast_snapshots": {
+    "assignment-001": {
+      "assignment_id": "assignment-001",
+      "universe": "The Goonies",
+      "timestamp": "2026-03-12T12:55:06Z",
+      "agents": [
+        { "name": "Mikey", "role": "Lead" },
+        { "name": "Data", "role": "Game Developer" },
+        { "name": "Mouth", "role": "UI Developer" },
+        { "name": "Chunk", "role": "Tester" }
+      ]
+    }
+  }
+}
